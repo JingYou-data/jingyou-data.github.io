@@ -20,11 +20,11 @@ Personal blog documenting my journey from hospitality management to data enginee
 
 ## Local Development
 ```bash
-# Clone the repository
-git clone https://github.com/your-username/jingyou.github.io.git
+
+git clone https://github.com/jingyou-data/jingyou-data.github.io.git
 
 # Navigate to directory
-cd jingyou.github.io
+cd jingyou-data.github.io
 
 # View locally (if using Jekyll)
 bundle exec jekyll serve
