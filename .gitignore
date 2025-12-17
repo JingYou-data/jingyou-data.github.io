@@ -1,0 +1,24 @@
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Jekyll
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Ruby
+Gemfile.lock
+
+# Environment variables (if you add any)
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
