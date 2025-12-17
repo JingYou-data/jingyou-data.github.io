@@ -263,10 +263,8 @@ Use familiar concepts to understand new ones:
 
 **Currently seeking Data Analyst / BI Analyst positions (Nashville, graduating May 2025)**
 
-- 📧 Email: [your-email@example.com]
-- 💼 LinkedIn: [linkedin.com/in/your-profile]
-- 🐙 GitHub: [github.com/your-username](https://github.com/your-username)
-- 📍 Location: Franklin, Tennessee
+- 📧 Email: jingliuyou@gmail.com
+- 📍 Location: Nolensville, Tennessee
 
 ---
 
