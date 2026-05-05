@@ -2,10 +2,8 @@
 layout: default
 title: Home
 ---
-
 # 👋 Hi, I'm Jing You  
 **Data Engineering & Analytics Engineering | Microsoft Fabric | Power BI | Python | SQL**
-
 I build scalable data systems that turn raw information into actionable insights.  
 My background blends business operations, customer understanding, and technical engineering — giving me a unique edge in solving real-world data problems.
 
@@ -40,7 +38,6 @@ My background blends business operations, customer understanding, and technical 
 
 ## **📌 NPPES Medical Provider Data Pipeline**
 **Tech Stack:** Python, AWS S3, PostgreSQL, Docker  
-
 A full batch ETL pipeline processing **8.7 million** medical provider records.
 
 ### **Highlights**
@@ -55,22 +52,18 @@ A full batch ETL pipeline processing **8.7 million** medical provider records.
 
 ## **📌 Weather Data Integration Pipeline**
 **Tech Stack:** Python, REST API, Pandas, PostgreSQL, DuckDB, Docker  
-
 A multi-source data pipeline combining real-time weather data with station metadata.
 
 ### **Core Features**
 ```python
-
 merged = weather_df.merge(stations_df, on='city', how='inner')
 merged.to_parquet('weather_clean.parquet')
-
 # Data Validation with DuckDB
 con.execute("""
     SELECT COUNT(*) as null_count
     FROM weather WHERE temperature_f IS NULL
 """)
-...
----
+```
 
 ### **Project Highlights**
 - RESTful API integration with authentication & rate limiting  
@@ -113,6 +106,5 @@ My hospitality and operations background helps me:
 
 # 📬 Contact
 **Open to Data Engineer / Analytics Engineer / BI roles (Nashville or Remote)**
-
 - 📧 Email: **jingliuyou@gmail.com**  
 - 📍 Nolensville, Tennessee
