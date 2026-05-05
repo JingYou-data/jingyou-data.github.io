@@ -102,3 +102,17 @@ cd jingyou-data.github.io
 
 # View locally (if using Jekyll)
 bundle exec jekyll serve
+
+## Contact
+
+📧 **jingliuyou@gmail.com**  
+🔗 **LinkedIn**: https://www.linkedin.com/in/jing-you84/  
+🔗 **GitHub**: https://github.com/JingYou-data  
+🔗 **Portfolio**: https://jingyou-data.github.io
+
+---
+
+## License
+
+© 2026 Jing You. All rights reserved.
+
