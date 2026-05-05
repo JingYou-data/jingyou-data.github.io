@@ -77,7 +77,7 @@ Processed 8.7 million medical provider records, building a complete batch ETL pi
 - Automating processes with Lambda functions
 - Implementing structured logging systems
 
-[View Project →](https://github.com/your-username/nppes-project)
+[View Project →](https://github.com/JingYou-data/NPPES)
 
 ---
 
@@ -103,4 +103,3 @@ con.execute("""
     SELECT COUNT(*) as null_count
     FROM weather WHERE temperature_f IS NULL
 """)
-
