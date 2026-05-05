@@ -114,4 +114,4 @@ My hospitality and operations background helps me:
 **Open to Data Engineer / Analytics Engineer / BI roles (Nashville or Remote)**
 
 - 📧 Email: **jingliuyou@gmail.com**  
-- 📍 Nolensville, Tennessee  
+- 📍 Nolensville, Tennessee
