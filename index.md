@@ -3,7 +3,6 @@ layout: default
 title: Home
 ---
 
-
 ## 👋 About Me
 
 I'm **Jing You**, transitioning from hospitality management to data engineering.
@@ -41,6 +40,7 @@ While running my restaurant, I found myself spending countless hours in Excel an
 - Data modeling
 
 ---
+
 ## 🛠️ Technical Skills
 
 **Programming Languages**
@@ -62,6 +62,7 @@ While running my restaurant, I found myself spending countless hours in Excel an
 **Data Formats**
 - JSON, Parquet, CSV
 - Structured & Semi-structured Data
+
 ---
 
 ## 💼 Project Portfolio
@@ -102,191 +103,4 @@ con.execute("""
     SELECT COUNT(*) as null_count
     FROM weather WHERE temperature_f IS NULL
 """)
-```
-
-**Project Highlights:**
-- ✅ Implemented RESTful API integration with authentication, rate limiting, and error handling
-- ✅ Used Pandas for data cleaning and merging (Inner Join)
-- ✅ Implemented 6-layer data validation with DuckDB
-- ✅ Adopted columnar storage (Parquet), achieving 10x query speed improvement
-- ✅ Fully containerized (Docker + Dev Container)
-
-**Business Application:**
-This pipeline can analyze weather impacts on restaurant business, such as:
-- How much does customer traffic decrease on rainy days?
-- What weather conditions maximize outdoor seating utilization?
-- How to adjust staffing based on weather forecasts?
-
----
-
-## 🎯 From Restaurants to Code: My Unique Perspective
-
-As someone transitioning from hospitality, I've found many parallels between the two fields:
-
-| Restaurant Management | Data Engineering |
-|----------------------|------------------|
-| Ingredient procurement | Data ingestion (API + Database) |
-| Food preparation | Data cleaning (Pandas) |
-| Recipe standardization | Data transformation (Schema design) |
-| Quality control | Data validation (DuckDB) |
-| Plating & serving | Data delivery (Parquet + Reports) |
-
-This background makes me particularly attentive to:
-- **Data quality** (like checking ingredient freshness)
-- **Process optimization** (like improving kitchen efficiency)
-- **User needs** (like understanding customer preferences)
-
----
-
-## 💡 Key Takeaways from Two Months
-
-### Technical Side
-
-**1. Understanding the Essence of ETL**
-```
-Extract (Extraction)  → Acquire data from various sources
-Transform (Transformation) → Clean, merge, standardize
-Load (Loading)     → Store in target location
-```
-
-**2. Mastering Data Format Conversion**
-```
-JSON (raw data)  →  Pandas (processing)  →  Parquet (storage)
-```
-Why? Because different stages have different needs:
-- JSON is human-readable for debugging
-- Pandas is powerful for data manipulation
-- Parquet is optimized for large-scale queries
-
-**3. Learning Systems Thinking**
-Not just "making code work," but:
-- Error handling (What if the API fails?)
-- Logging (Can trace issues)
-- Containerization (Others can run it)
-- Documentation (I can understand it 3 months later)
-
-### Mindset Shifts
-
-**From "Completing Tasks" to "Building Systems"**
-- Before: Write a Python script to export data
-- Now: Design a repeatable, maintainable, scalable data pipeline
-
-**From "I Can Use Tools" to "I Understand Principles"**
-- Before: Know that Pandas can merge data
-- Now: Understand Inner Join vs Left Join, and when to use which
-
----
-
-## 🚧 Challenges I've Faced
-
-### 1. **Path vs pathlib - The File Path Confusion**
-**Problem**: Windows uses `\`, Mac uses `/`, code breaks across platforms
-
-**Solution**: Learning to use `pathlib.Path`
-```python
-# Old way (error-prone)
-filepath = 'data\\raw\\weather.json'
-
-# New way (cross-platform)
-from pathlib import Path
-filepath = Path('data') / 'raw' / 'weather.json'
-```
-
-### 2. **Parquet Format - Why Not Use CSV?**
-**Confusion**: CSV is so simple, why learn a new format?
-
-**Understanding**: 
-- CSV: 100MB, 3 seconds to read, human-readable
-- Parquet: 10MB, 0.3 seconds to read, machine-optimized
-
-In big data scenarios, Parquet saves 90% space and queries 10x faster!
-
-### 3. **Docker Dev Container - Why Containerize?**
-**Question**: My local environment works, why Docker?
-
-**Understanding**: 
-- My environment: Python 3.12 + Windows 11
-- Classmate's environment: Python 3.9 + Mac M1
-- Result: Code doesn't run on their computer!
-
-**Dev Container Solution**: Everyone uses the same environment!
-
----
-
-## 🎓 Advantages of a Non-Traditional Background
-
-Many ask me: "Can you learn data engineering without a CS degree?"
-
-**My answer: Absolutely! And you have unique advantages.**
-
-**My hospitality background gave me:**
-
-✅ **Real Business Understanding**
-- I know what restaurant owners actually need from data
-- I understand why "average check size" matters more than "total revenue"
-
-✅ **Problem-Solving Ability**
-- Restaurants face daily crises, developing quick adaptability
-- Debugging code is like handling kitchen emergencies
-
-✅ **Customer-Oriented Thinking**
-- Writing code isn't about writing code—it's about solving problems
-- The "customers" of data pipelines are data analysts and business teams
-
----
-
-## 📈 Learning Methods I Use
-
-### 1. **Learn Through Projects, Not Just Tutorials**
-- ❌ Watch 100 Pandas tutorials
-- ✅ Do 1 real project, look up docs when stuck
-
-### 2. **Analogy Learning**
-Use familiar concepts to understand new ones:
-- ETL = Restaurant supply chain
-- API = Food delivery platform ordering
-- Database = Warehouse
-- Cache = Prep station
-
-### 3. **Document Everything**
-- Errors encountered and solutions
-- New concepts learned
-- "Aha moments" (sudden understanding)
-
-### 4. **Don't Fear "Dumb Questions"**
-"What's the difference between Path and pathlib?" isn't dumb—it's a great question!
-
----
-
-
-## 📬 Contact Me
-
-**Currently seeking Data Analyst / BI Analyst positions (Nashville, graduating May 2025)**
-
-- 📧 Email: jingliuyou@gmail.com
-- 📍 Location: Nolensville, Tennessee
-
----
-
-## 💭 Final Thoughts
-
-Two months ago, I knew nothing about "ETL." Today, I can confidently say: **I am a data engineer** (still learning, of course).
-
-If you're also from a non-traditional background, if you're considering a career change to tech, I want to tell you:
-- **Age is not a barrier** (I have a child and I'm still learning)
-- **Background is not a barrier** (I studied hospitality management)
-- **Starting point is not a barrier** (I came to the US at 16, worked while getting my GED)
-
-**The only question is: Are you willing to start?**
-
-I started two months ago, and today I have my own tech blog.  
-Where will you be two months from now?
-
-Let's connect! I'm happy to share my learning experience and look forward to hearing your story.
-
----
-
-*Last updated: December 16, 2024*
-
----
 
