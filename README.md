@@ -4,10 +4,19 @@
 
 ## About This Site
 
-A professional portfolio showcasing my work in **data engineering, analytics engineering, and modern ELT pipelines**.  
-This site highlights end‑to‑end projects built with **SQLMesh, dbt, Airflow, Prefect, Snowflake, DuckDB, Power BI**, and other components of the modern data stack.
+A professional portfolio showcasing my work in **data engineering, analytics engineering, and business intelligence**.  
+This site highlights end‑to‑end ELT pipelines, semantic modeling, and modern data stack projects built with:
 
-My focus is building **scalable, automated, and business‑impactful data systems**.
+- SQLMesh  
+- dbt  
+- Airflow  
+- Prefect  
+- Snowflake  
+- DuckDB  
+- Power BI  
+- Python (Polars, Pandas)
+
+My focus is building **scalable, automated, and business‑impactful data systems** that transform raw data into reliable insights.
 
 ---
 
@@ -18,7 +27,7 @@ My focus is building **scalable, automated, and business‑impactful data system
 - **Lakehouse / Engines**: DuckDB, Databricks, Delta Lake  
 - **Programming**: Python (Polars, Pandas), SQL  
 - **APIs & Pipelines**: REST APIs, multi‑source ingestion, CI/CD  
-- **BI & Analytics**: Power BI, DAX, Metabase  
+- **BI & Analytics**: Power BI, DAX, Semantic Modeling, Metabase, Geospatial Analysis  
 - **DevOps**: GitHub Actions, Docker  
 - **Hosting**: GitHub Pages (Markdown + Jekyll)
 
@@ -27,18 +36,24 @@ My focus is building **scalable, automated, and business‑impactful data system
 ## Projects Featured
 
 ### ⭐ 1. MidTenn Lend Map — Small Business Lending Intelligence Platform  
-**SQLMesh · Prefect · DuckDB · Snowflake · Power BI · 5 Public APIs**
+**SQLMesh · Prefect · DuckDB · Snowflake · Power BI · Metabase · 5 Public APIs**
 
-End‑to‑end data engineering platform designed for **community banks in Middle Tennessee**, transforming public financial data into actionable lending intelligence.
+End‑to‑end data engineering platform designed for community banks in Middle Tennessee.
 
+**Engineering Highlights**
 - Multi‑source ingestion across **SBA, FDIC, CFPB, FRED, Census**  
 - **Medallion architecture** (Bronze → Silver → Gold)  
 - **19 SQLMesh models** orchestrated with Prefect  
 - **2,300+ loan records** + **52,000+ complaint records** processed  
-- **Geospatial insights** identifying underserved lending opportunities  
 - Dual serving layers:  
   - Snowflake + Power BI (executive dashboards)  
   - PostgreSQL + Metabase (operational monitoring)
+
+**Power BI Work**
+- Executive dashboard built on Snowflake  
+- DAX measures for loan performance, complaint trends, and risk scoring  
+- Geospatial visuals identifying underserved lending regions  
+- Semantic model aligned with business entities (Loans, Banks, Complaints, Regions)
 
 🔗 GitHub Repo: *[Add your link]*
 
@@ -47,13 +62,20 @@ End‑to‑end data engineering platform designed for **community banks in Middl
 ### ⭐ 2. NPPES Healthcare Provider Pipeline — 8.85M Records  
 **dbt · Snowflake · Airflow · Power BI**
 
-A large‑scale ELT pipeline processing **8.85 million CMS provider records (9.9GB)** with automated testing and CI/CD.
+Large‑scale ELT pipeline processing **8.85 million CMS provider records (9.9GB)** with automated testing and CI/CD.
 
+**Engineering Highlights**
 - dbt models across staging → intermediate → marts  
 - **16+ automated dbt tests**  
 - Schema‑change detection + GitHub Actions CI/CD  
-- Power BI semantic model + DAX measures  
-- Familiarity with federal healthcare data governance
+- Airflow DAG for scheduled ingestion + transformation  
+- Data quality and documentation integrated into workflow
+
+**Power BI Work**
+- Provider segmentation dashboard  
+- DAX measures for provider density, specialty distribution, and geographic coverage  
+- Snowflake‑based semantic model  
+- Data quality indicators surfaced in BI layer
 
 🔗 GitHub Repo: *[Add your link]*
 
