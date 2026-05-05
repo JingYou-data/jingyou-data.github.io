@@ -60,7 +60,7 @@ A multi-source data pipeline combining real-time weather data with station metad
 
 ### **Core Features**
 ```python
-# Data Transformation
+
 merged = weather_df.merge(stations_df, on='city', how='inner')
 merged.to_parquet('weather_clean.parquet')
 
