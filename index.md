@@ -69,7 +69,8 @@ con.execute("""
     SELECT COUNT(*) as null_count
     FROM weather WHERE temperature_f IS NULL
 """)
-
+...
+---
 
 ### **Project Highlights**
 - RESTful API integration with authentication & rate limiting  
