@@ -3,97 +3,63 @@ layout: default
 title: Home
 ---
 
-## 👋 About Me
+# 👋 Hi, I'm Jing You  
+**Data Engineering & Analytics Engineering | Microsoft Fabric | Power BI | Python | SQL**
 
-I'm **Jing You**, transitioning from hospitality management to data engineering.
-
-**My Background:**
-- 🎓 Hospitality Management degree from RIT
-- 🏠 Former Airbnb host & owner of Appliances 4 Less Nashville
-- 📊 5 years of experience in e-commerce digital marketing
-- 💻 Currently: Data Engineering Apprentice at Nashville Software School (Graduating May 2025)
-
-**Why the Transition?**
-
-While running my restaurant, I found myself spending countless hours in Excel analyzing customer data and optimizing Facebook ad campaigns. I realized: **I love solving problems with data**. As an immigrant who came to the US at 16, I've always believed that education and skills are the keys to changing one's destiny. After completing a Data Analytics bootcamp, I decided to go further—to learn Data Engineering.
+I build scalable data systems that turn raw information into actionable insights.  
+My background blends business operations, customer understanding, and technical engineering — giving me a unique edge in solving real-world data problems.
 
 ---
 
-## 🚀 My Two-Month Learning Journey
+# ⚡ Core Skills
 
-### Timeline
-- **October 2024**: Started Data Engineering program
-- **November 2024**: Completed first ETL project
-- **December 2024**: Successfully built API data pipeline
+### **Data Engineering**
+- ETL / ELT pipeline development  
+- REST API integration  
+- Data modeling & transformation  
+- Data validation & quality assurance  
+- Batch processing & automation  
 
-### Tech Stack
-**Proficient:**
-- **Languages**: Python, SQL
-- **Data Processing**: Pandas, Polars
-- **Databases**: PostgreSQL, DuckDB
-- **Tools**: Docker, Git, VS Code
-- **Cloud**: AWS (S3, Lambda)
+### **Technologies**
+- **Python:** Pandas, Polars, Requests  
+- **SQL:** PostgreSQL, DuckDB  
+- **Cloud:** AWS (S3, Lambda)  
+- **Tools:** Docker, Git, VS Code Dev Containers  
+- **Data Formats:** JSON, Parquet, CSV  
 
-**Currently Learning:**
-- dbt (data build tool)
-- Apache Airflow
-- Data modeling
-
----
-
-## 🛠️ Technical Skills
-
-**Programming Languages**
-- Python (Pandas, Polars, Requests)
-- SQL (PostgreSQL, DuckDB)
-
-**Data Engineering**
-- ETL Pipeline Development
-- API Integration & REST APIs
-- Data Validation & Quality Assurance
-- Batch Processing
-
-**Tools & Technologies**
-- Docker & Containerization
-- Git & Version Control
-- AWS (S3, Lambda)
-- VS Code & Dev Containers
-
-**Data Formats**
-- JSON, Parquet, CSV
-- Structured & Semi-structured Data
+### **Currently Learning**
+- dbt  
+- Apache Airflow  
+- Microsoft Fabric  
 
 ---
 
-## 💼 Project Portfolio
-
-### Project 1: NPPES Medical Provider Data Pipeline
-**Tech Stack**: Python, AWS S3, PostgreSQL, Docker
-
-Processed 8.7 million medical provider records, building a complete batch ETL pipeline.
-
-**Key Learnings:**
-- Handling large-scale datasets (8.8M records)
-- Automating processes with Lambda functions
-- Implementing structured logging systems
-
-[View Project →](https://github.com/JingYou-data/NPPES)
+# 💼 Featured Projects
 
 ---
 
-### Project 2: Weather Data Integration Pipeline ⭐ *Latest*
-**Tech Stack**: Python, REST API, Pandas, PostgreSQL, DuckDB, Docker
+## **📌 NPPES Medical Provider Data Pipeline**
+**Tech Stack:** Python, AWS S3, PostgreSQL, Docker  
 
-Built a multi-source data integration pipeline that combines real-time weather data from OpenWeatherMap API with PostgreSQL weather station information.
+A full batch ETL pipeline processing **8.7 million** medical provider records.
 
-**Core Features:**
+### **Highlights**
+- Automated ingestion using AWS Lambda  
+- Efficient processing of multi-million–row datasets  
+- Structured logging for traceability  
+- End-to-end containerized workflow  
+
+👉 [View Project →](https://github.com/JingYou-data/NPPES)
+
+---
+
+## **📌 Weather Data Integration Pipeline**
+**Tech Stack:** Python, REST API, Pandas, PostgreSQL, DuckDB, Docker  
+
+A multi-source data pipeline combining real-time weather data with station metadata.
+
+### **Core Features**
 ```python
-# API Integration with Rate Limiting
-@rate_limit(max_per_second=2)
-def fetch_weather(city, lat, lon):
-    response = requests.get(url, params=params)
-    return response.json()
-
 # Data Transformation
 merged = weather_df.merge(stations_df, on='city', how='inner')
 merged.to_parquet('weather_clean.parquet')
@@ -103,3 +69,49 @@ con.execute("""
     SELECT COUNT(*) as null_count
     FROM weather WHERE temperature_f IS NULL
 """)
+
+
+### **Project Highlights**
+- RESTful API integration with authentication & rate limiting  
+- Data cleaning & merging using Pandas (Inner Join)  
+- 6-layer data validation using DuckDB  
+- Parquet columnar storage → **10× faster queries**  
+- Fully containerized with Docker + Dev Container  
+
+### **Business Impact**
+Enables analysis of weather-driven business patterns:
+- Customer traffic changes on rainy days  
+- Outdoor seating optimization  
+- Staffing adjustments based on forecasts  
+
+---
+
+# 🧠 How I Think About Data Engineering
+
+### **Systems Over Scripts**
+I design pipelines that are:
+- Maintainable  
+- Scalable  
+- Observable  
+- Documented  
+
+### **Data Quality First**
+Bad data = bad decisions.  
+I prioritize:
+- Validation  
+- Schema consistency  
+- Reproducibility  
+
+### **Business-Aware Engineering**
+My hospitality and operations background helps me:
+- Understand real business workflows  
+- Identify high-impact opportunities  
+- Communicate clearly with non-technical teams  
+
+---
+
+# 📬 Contact
+**Open to Data Engineer / Analytics Engineer / BI roles (Nashville or Remote)**
+
+- 📧 Email: **jingliuyou@gmail.com**  
+- 📍 Nolensville, Tennessee  
