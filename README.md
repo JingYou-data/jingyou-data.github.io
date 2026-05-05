@@ -55,7 +55,7 @@ End‑to‑end data engineering platform designed for community banks in Middle 
 - Geospatial visuals identifying underserved lending regions  
 - Semantic model aligned with business entities (Loans, Banks, Complaints, Regions)
 
-🔗 GitHub Repo: *[Add your link]*
+🔗 GitHub Repo: *[(https://github.com/JingYou-data/MidTenn_Lend_Map)]*
 
 ---
 
@@ -77,7 +77,7 @@ Large‑scale ELT pipeline processing **8.85 million CMS provider records (9.9GB
 - Snowflake‑based semantic model  
 - Data quality indicators surfaced in BI layer
 
-🔗 GitHub Repo: *[Add your link]*
+🔗 GitHub Repo: *[https://github.com/JingYou-data/NPPES]*
 
 ---
 
