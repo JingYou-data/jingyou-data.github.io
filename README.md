@@ -1,118 +1,131 @@
-# Jing You - Data Engineering Portfolio
+---
+layout: default
+title: Home
+---
+# 👋 Hi, I'm Jing You  
+**Data Engineering & Analytics Engineering | Microsoft Fabric | Power BI | Python | SQL**
+I build scalable data systems that turn raw information into actionable insights.  
+My background blends business operations, customer understanding, and technical engineering — giving me a unique edge in solving real-world data problems.
 
-🌐 **Live Site**: [jingyou-data.github.io](https://jingyou-data.github.io)
+---
 
-## About This Site
+# ⚡ Core Skills
 
-A professional portfolio showcasing my work in **data engineering, analytics engineering, and business intelligence**.  
-This site highlights end‑to‑end ELT pipelines, semantic modeling, and modern data stack projects built with:
+### **Data Engineering**
+- ETL / ELT pipeline development  
+- REST API integration  
+- Data modeling & transformation  
+- Data validation & quality assurance  
+- Batch processing & automation  
 
-- SQLMesh  
+### **Technologies**
+- **Python:** Pandas, Polars, Requests  
+- **SQL:** PostgreSQL, DuckDB  
+- **Cloud:** AWS (S3, Lambda)  
+- **Tools:** Docker, Git, VS Code Dev Containers  
+- **Data Formats:** JSON, Parquet, CSV  
+
+### **Currently Learning**
 - dbt  
-- Airflow  
-- Prefect  
-- Snowflake  
-- DuckDB  
-- Power BI  
-- Python (Polars, Pandas)
-
-My focus is building **scalable, automated, and business‑impactful data systems** that transform raw data into reliable insights.
+- Apache Airflow  
+- Microsoft Fabric  
 
 ---
 
-## Tech Stack
-
-- **Modern Data Stack**: SQLMesh, dbt, Airflow, Prefect  
-- **Data Warehousing**: Snowflake  
-- **Lakehouse / Engines**: DuckDB, Databricks, Delta Lake  
-- **Programming**: Python (Polars, Pandas), SQL  
-- **APIs & Pipelines**: REST APIs, multi‑source ingestion, CI/CD  
-- **BI & Analytics**: Power BI, DAX, Semantic Modeling, Metabase, Geospatial Analysis  
-- **DevOps**: GitHub Actions, Docker  
-- **Hosting**: GitHub Pages (Markdown + Jekyll)
+# 💼 Featured Projects
 
 ---
 
-## Projects Featured
+## **📌 NPPES Medical Provider Data Pipeline**
+**Tech Stack:** Python, AWS S3, PostgreSQL, Docker  
+A full batch ETL pipeline processing **8.7 million** medical provider records.
 
-### ⭐ 1. MidTenn Lend Map — Small Business Lending Intelligence Platform  
-**SQLMesh · Prefect · DuckDB · Snowflake · Power BI · Metabase · 5 Public APIs**
+### **Highlights**
+- Automated ingestion using AWS Lambda  
+- Efficient processing of multi-million–row datasets  
+- Structured logging for traceability  
+- End-to-end containerized workflow  
 
-End‑to‑end data engineering platform designed for community banks in Middle Tennessee.
+👉 [View Project →](https://github.com/JingYou-data/NPPES)
 
-**Engineering Highlights**
-- Multi‑source ingestion across **SBA, FDIC, CFPB, FRED, Census**  
-- **Medallion architecture** (Bronze → Silver → Gold)  
-- **19 SQLMesh models** orchestrated with Prefect  
-- **2,300+ loan records** + **52,000+ complaint records** processed  
-- Dual serving layers:  
-  - Snowflake + Power BI (executive dashboards)  
-  - PostgreSQL + Metabase (operational monitoring)
+---
 
-**Power BI Work**
-- Executive dashboard built on Snowflake  
-- DAX measures for loan performance, complaint trends, and risk scoring  
-- Geospatial visuals identifying underserved lending regions  
+## **⭐ MidTenn Lend Map — Small Business Lending Intelligence Platform**
+**Tech Stack:** SQLMesh · Prefect · DuckDB · Snowflake · Power BI · Metabase · 5 Public APIs  
+End-to-end data engineering platform designed for community banks in Middle Tennessee.
+
+### **Engineering Highlights**
+- Multi-source ingestion across SBA, FDIC, CFPB, FRED, and Census APIs
+- Medallion architecture (Bronze → Silver → Gold)
+- 19 SQLMesh models orchestrated with Prefect
+- 2,300+ loan records + 52,000+ complaint records processed
+- Dual serving layers: Snowflake + Power BI (executive dashboards) and PostgreSQL + Metabase (operational monitoring)
+
+### **Power BI Work**
+- Executive dashboard built on Snowflake
+- DAX measures for loan performance, complaint trends, and risk scoring
+- Geospatial visuals identifying underserved lending regions
 - Semantic model aligned with business entities (Loans, Banks, Complaints, Regions)
 
-🔗 GitHub Repo: *[(https://github.com/JingYou-data/MidTenn_Lend_Map)]*
+👉 [View Project →](https://github.com/JingYou-data/MidTenn_Lend_Map)
 
 ---
 
-### ⭐ 2. NPPES Healthcare Provider Pipeline — 8.85M Records  
-**dbt · Snowflake · Airflow · Power BI**
+## **📌 Weather Data Integration Pipeline**
+**Tech Stack:** Python, REST API, Pandas, PostgreSQL, DuckDB, Docker  
+A multi-source data pipeline combining real-time weather data with station metadata.
 
-Large‑scale ELT pipeline processing **8.85 million CMS provider records (9.9GB)** with automated testing and CI/CD.
+### **Core Features**
+```python
+merged = weather_df.merge(stations_df, on='city', how='inner')
+merged.to_parquet('weather_clean.parquet')
+# Data Validation with DuckDB
+con.execute("""
+    SELECT COUNT(*) as null_count
+    FROM weather WHERE temperature_f IS NULL
+""")
+```
 
-**Engineering Highlights**
-- dbt models across staging → intermediate → marts  
-- **16+ automated dbt tests**  
-- Schema‑change detection + GitHub Actions CI/CD  
-- Airflow DAG for scheduled ingestion + transformation  
-- Data quality and documentation integrated into workflow
+### **Project Highlights**
+- RESTful API integration with authentication & rate limiting  
+- Data cleaning & merging using Pandas (Inner Join)  
+- 6-layer data validation using DuckDB  
+- Parquet columnar storage → **10× faster queries**  
+- Fully containerized with Docker + Dev Container  
 
-**Power BI Work**
-- Provider segmentation dashboard  
-- DAX measures for provider density, specialty distribution, and geographic coverage  
-- Snowflake‑based semantic model  
-- Data quality indicators surfaced in BI layer
-
-🔗 GitHub Repo: *[https://github.com/JingYou-data/NPPES]*
-
----
-
-### ⭐ 3. Additional Engineering Work  
-**Python · Polars · FastAPI · PostgreSQL · Databricks · Kafka**
-
-- Designed relational databases + REST APIs with FastAPI  
-- Built data transformations using Polars/Pandas  
-- Worked with Databricks + Delta Lake  
-- Implemented streaming patterns (Kafka/pub‑sub)  
-- Applied Git/GitHub for version control, CI/CD, documentation
+### **Business Impact**
+Enables analysis of weather-driven business patterns:
+- Customer traffic changes on rainy days  
+- Outdoor seating optimization  
+- Staffing adjustments based on forecasts  
 
 ---
 
-## Local Development
+# 🧠 How I Think About Data Engineering
 
-```bash
-git clone https://github.com/jingyou-data/jingyou-data.github.io.git
+### **Systems Over Scripts**
+I design pipelines that are:
+- Maintainable  
+- Scalable  
+- Observable  
+- Documented  
 
-# Navigate to directory
-cd jingyou-data.github.io
+### **Data Quality First**
+Bad data = bad decisions.  
+I prioritize:
+- Validation  
+- Schema consistency  
+- Reproducibility  
 
-# View locally (if using Jekyll)
-bundle exec jekyll serve
-
-## Contact
-
-📧 **jingliuyou@gmail.com**  
-🔗 **LinkedIn**: https://www.linkedin.com/in/jing-you84/  
-🔗 **GitHub**: https://github.com/JingYou-data  
-🔗 **Portfolio**: https://jingyou-data.github.io
+### **Business-Aware Engineering**
+My hospitality and operations background helps me:
+- Understand real business workflows  
+- Identify high-impact opportunities  
+- Communicate clearly with non-technical teams  
 
 ---
 
-## License
-
-© 2026 Jing You. All rights reserved.
-
+# 📬 Contact
+**Open to Data Engineer / Analytics Engineer / BI roles (Nashville or Remote)**
+- 📧 Email: **jingliuyou@gmail.com**  
+- 📍 Nolensville, Tennessee
