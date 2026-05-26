@@ -84,7 +84,7 @@ A fully orchestrated public health data pipeline with an interactive Streamlit d
 - Airflow scheduling and monitoring for reliable daily runs
 - Streamlit dashboard enabling stakeholders to explore metrics without SQL access
 - Data quality validation at each medallion layer before promotion
-
+👉 [View Project →](https://github.com/JingYou-data/covid19_data_pipeline)
 ---
 
 ## 📌 Brazilian E-Commerce Analytics Dashboard
