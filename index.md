@@ -16,7 +16,7 @@ I build scalable, production-grade data pipelines and analytics solutions — fr
 # ⚡ Core Skills
 
 ### Data Engineering
-- End-to-end ELT pipeline development (batch & event-driven)
+- End-to-end ELT pipeline development (batch & streaming)
 - Medallion architecture (Bronze / Silver / Gold)
 - Data modeling, transformation & quality assurance
 - REST API integration & multi-source ingestion
@@ -27,6 +27,7 @@ I build scalable, production-grade data pipelines and analytics solutions — fr
 - **Transformation:** dbt, SQLMesh
 - **Warehouses:** Snowflake, DuckDB, PostgreSQL
 - **Orchestration:** Apache Airflow, Prefect
+- **Streaming:** RabbitMQ, WebSocket
 - **Cloud:** AWS (S3, Lambda), Azure Databricks
 - **BI & Visualization:** Power BI (Advanced DAX), Metabase, Streamlit
 - **Tools:** Docker, Git, GitHub Actions, VS Code Dev Containers
@@ -53,6 +54,29 @@ End-to-end data engineering platform surfacing county-level small business lendi
 - Geospatial visuals identifying underserved lending regions across Middle Tennessee counties
 
 👉 [View Project →](https://github.com/JingYou-data/MidTenn_Lend_Map)
+
+---
+
+## 📌 Crypto Market Streaming Pipeline
+
+**Tech Stack:** Python · Coinbase WebSocket · RabbitMQ · PostgreSQL · dbt · DuckLake · Metabase · Apache Airflow
+
+A real-time streaming data pipeline ingesting live cryptocurrency market data from Coinbase and transforming it into analytical dashboards.
+
+### Architecture
+```
+Coinbase WebSocket → RabbitMQ → PostgreSQL → dbt → DuckLake + Metabase
+                                                  Airflow (hourly orchestration)
+```
+
+### Engineering Highlights
+- Real-time WebSocket ingestion from Coinbase market feed into RabbitMQ message queue
+- PostgreSQL as the core data warehouse with dbt transformations for clean analytical models
+- DuckLake lakehouse layer for cost-efficient analytical queries
+- Metabase dashboards for live market monitoring
+- Apache Airflow orchestrating hourly dbt runs for fresh reporting
+
+👉 [View Project →](https://github.com/JingYou-data/crypto_pipeline_analysis)
 
 ---
 
@@ -84,8 +108,9 @@ A fully orchestrated public health data pipeline with an interactive Streamlit d
 - Airflow scheduling and monitoring for reliable daily runs
 - Streamlit dashboard enabling stakeholders to explore metrics without SQL access
 - Data quality validation at each medallion layer before promotion
-  
+
 👉 [View Project →](https://github.com/JingYou-data/covid19_data_pipeline)
+
 ---
 
 ## 📌 Brazilian E-Commerce Analytics Dashboard
